@@ -1,0 +1,33 @@
+---
+import NavComponent from "./NavComponent.astro";
+---
+
+<header class="bg-white">
+  <div class="bg-black w-full flex justify-center items-center relative">
+    <h1
+      class="text-6xl text-white uppercase font-semibold text-center py-6 select-none"
+    >
+      Fumo Gang
+    </h1>
+  </div>
+  <nav class="flex justify-center items-center gap-10 bg-white mt-4">
+    <NavComponent className="hover:scale-105 transition" title="Tracks" href="#"
+      >Tracks</NavComponent
+    >
+    <NavComponent className="hover:scale-105 transition" title="Shop" href="#"
+      >Shop</NavComponent
+    >
+    <NavComponent className="hover:scale-105 transition" title="Sexo" href="#"
+      >Sexo</NavComponent
+    >
+    <NavComponent className="hover:scale-105 transition" title="About" href="#"
+      >About</NavComponent
+    >
+  </nav>
+</header>
+
+<style>
+  header > div {
+    box-shadow: -2px 6px 24px 7px rgba(0, 0, 0, 0.66);
+  }
+</style>
